@@ -41,7 +41,7 @@
 		607FACE51AFB9204008FA782 /* IconButton_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IconButton_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		762B05099BAE9892FD94D2C2 /* IconButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IconButton.podspec; path = ../IconButton.podspec; sourceTree = "<group>"; };
+		762B05099BAE9892FD94D2C2 /* IconButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IconButton.podspec; path = ../IconButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7B7C149D9A396FA470EE0C4A /* Pods_IconButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A581FCC282A738754F8F762 /* Pods-IconButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IconButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IconButton_Tests/Pods-IconButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9386C1AD017B109F68EB283E /* Pods_IconButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };

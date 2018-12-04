@@ -21,15 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/d30161ee00f0e6adad3b886b1bfd0d064d7933f2/IconButton'
+  s.homepage         = 'https://github.com/mo3bius/IconButton'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'd30161ee00f0e6adad3b886b1bfd0d064d7933f2' => 'luigiaiello97@gmail.com' }
-  s.source           = { :git => 'https://github.com/d30161ee00f0e6adad3b886b1bfd0d064d7933f2/IconButton.git', :tag => s.version.to_s }
+  s.author           = { 'Luigi Aiello' => 'luigiaiello97@gmail.com' }
+  s.source           = { :git => 'https://github.com/mo3bius/IconButton.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.2'
   s.source_files = 'IconButton/Classes/**/*'
   
   # s.resource_bundles = {
