@@ -1,3 +1,7 @@
+## Target platform
+platform :ios, '9.0'
+
+## Use frameworks
 use_frameworks!
 
 target 'IconButton_Example' do
