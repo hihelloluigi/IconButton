@@ -13,7 +13,7 @@
 - Make sure you have '**IconButton**' selected in '**Module**' field
 - Switch to the **Attributes Inspector** and **configure** it as you like. 
 
-![CardViewStoryboard](https://raw.githubusercontent.com/PaoloCuscela/Cards/master/Images/CardViewStoryboard.png)
+![CardViewStoryboard](https://github.com/mo3bius/IconButton/blob/master/Images/Storyboard_example.png)
 
 ## Example
 
