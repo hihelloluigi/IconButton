@@ -17,11 +17,11 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+A small example of a normal iOS button and what you can do with the library.
 
 <div class="row">
     <div class="column">
-        <img src="https://github.com/mo3bius/IconButton/blob/master/Images/button_FB_classic.png" alt="Classic" style="width:100%" title="The Women of iMarc">
+        <img src="https://github.com/mo3bius/IconButton/blob/master/Images/button_FB_classic.png" alt="Classic" style="width:100%">
     </div>
     <div class="column">
         <img src="https://github.com/mo3bius/IconButton/blob/master/Images/button_FB_custom.png" alt="Custom" style="width:100%">
