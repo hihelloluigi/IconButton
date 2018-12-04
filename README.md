@@ -19,16 +19,47 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+<div class="row">
+    <div class="column">
+        <img src="https://github.com/mo3bius/IconButton/blob/master/Images/button_FB_classic.png" alt="Classic" style="width:100%" title="The Women of iMarc">
+    </div>
+    <div class="column">
+        <img src="https://github.com/mo3bius/IconButton/blob/master/Images/button_FB_custom.png" alt="Custom" style="width:100%">
+    </div>
+</div>
+
+
+## Customization
+
+```swift
+var clickAlphaComponent: CGFloat
+var title: String?
+var titleColor: UIColor?
+var image: UIImage?
+var imageTintColor: UIColor?
+var isCircle: Bool
+var cornerRadius: CGFloat
+var borderWidth: CGFloat
+var borderColor: UIColor
+var shadowRadius: CGFloat
+var shadowOpacity: CGFloat
+var shadowOffSet: CGFloat
+var shadowColor: UIColor
+```
+
+## Prerequisites
+
+- **Xcode 9.0** or newer
+- **Swift 4.0**
 
 ## Installation
 
-IconButton is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
+### Cocoapods
+```
+use_frameworks!
 pod 'IconButton'
 ```
+
 
 ## Author
 
