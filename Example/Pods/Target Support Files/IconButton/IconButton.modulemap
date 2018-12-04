@@ -1,0 +1,6 @@
+framework module IconButton {
+  umbrella header "IconButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
