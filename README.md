@@ -5,6 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/IconButton.svg?style=flat)](https://cocoapods.org/pods/IconButton)
 [![Platform](https://img.shields.io/cocoapods/p/IconButton.svg?style=flat)](https://cocoapods.org/pods/IconButton)
 
+## Getting Started
+
+### Storyboard
+- Go to **main.storyboard** and add a **blank UIBUtton**
+- Open the **Identity Inspector** and type '**IconButton**' the '**class**' field
+- Make sure you have '**IconButton**' selected in '**Module**' field
+- Switch to the **Attributes Inspector** and **configure** it as you like. 
+
+![CardViewStoryboard](https://raw.githubusercontent.com/PaoloCuscela/Cards/master/Images/CardViewStoryboard.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +32,7 @@ pod 'IconButton'
 
 ## Author
 
-d30161ee00f0e6adad3b886b1bfd0d064d7933f2, luigiaiello97@gmail.com
+Luigi Aiello, luigiaiello97@gmail.com
 
 ## License
 
