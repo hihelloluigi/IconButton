@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class IconButton: UIButton {
+public class IconButton: UIButton {
     
     // Mark - Outlets
     @IBOutlet var contentView: UIView!
@@ -17,8 +17,6 @@ class IconButton: UIButton {
     @IBOutlet var iconImageView: UIImageView!
     
     // Mark - Property
-    
-    @IBInspectable
     public var clickAlphaComponent: CGFloat = 0.6
     
     @IBInspectable
@@ -41,7 +39,14 @@ class IconButton: UIButton {
             self.iconImageView.image = image
         }
     }
-    
+
+    @IBInspectable
+    public var imageTintColor: UIColor? {
+        didSet {
+            self.iconImageView.tintColor = imageTintColor
+        }
+    }
+
     @IBInspectable
     public var isCircle: Bool = false {
         didSet {
@@ -109,7 +114,7 @@ class IconButton: UIButton {
         super.init(coder: aDecoder)
         commonInit()
     }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         guard let color = self.backgroundColor else {
             return
@@ -117,7 +122,7 @@ class IconButton: UIButton {
         self.backgroundColor = color.withAlphaComponent(clickAlphaComponent)
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         guard let color = self.backgroundColor else {
             return

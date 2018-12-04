@@ -3,20 +3,21 @@
   "version": "0.1.0",
   "summary": "A short description of IconButton.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/d30161ee00f0e6adad3b886b1bfd0d064d7933f2/IconButton",
+  "homepage": "https://github.com/mo3bius/IconButton",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "d30161ee00f0e6adad3b886b1bfd0d064d7933f2": "luigiaiello97@gmail.com"
+    "Luigi Aiello": "luigiaiello97@gmail.com"
   },
   "source": {
-    "git": "https://github.com/d30161ee00f0e6adad3b886b1bfd0d064d7933f2/IconButton.git",
+    "git": "https://github.com/mo3bius/IconButton.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
+  "swift_version": "4.2",
   "source_files": "IconButton/Classes/**/*"
 }
