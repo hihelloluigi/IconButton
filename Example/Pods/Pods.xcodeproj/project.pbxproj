@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		007745ECC6C79081A89FB279B4EFA584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		0776CB54B1F129F344FD26D18C90C2C0 /* IconButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAEF0BC7B534D72A423A15345D93B46 /* IconButton-dummy.m */; };
+		2A2D256B21B67F7900AAD5BF /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D256A21B67F7900AAD5BF /* IconButtonView.swift */; };
+		2A2D256C21B67F7900AAD5BF /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D256A21B67F7900AAD5BF /* IconButtonView.swift */; };
+		2A2D256D21B67F7900AAD5BF /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D256A21B67F7900AAD5BF /* IconButtonView.swift */; };
 		548B01D991953491185396C733AF0FE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		809E68EED284BB05E631240B9A9EE65C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A3CFDCF4A01E1A1C971770EFA334697A /* Pods-IconButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B28FEEE57C652C2E44EDA73DE0299F /* Pods-IconButton_Example-dummy.m */; };
 		A45D79D0431B0B8B38C1DAFF32436347 /* Pods-IconButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D45556B46FFF9CD93A2CFA1AB82516 /* Pods-IconButton_Tests-dummy.m */; };
-		B1CBD214808A78A33FC778B15B360D1B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544A12C90BB8689F311FA2EFBFD2BB1F /* ReplaceMe.swift */; };
 		C61ECC4C21AB9B869D3D92E8E7861605 /* Pods-IconButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DDA9FC6715D02ECC8BBF6E6AD827CE7 /* Pods-IconButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA551CADA6AB5ED7EE4F9661E1D416C8 /* Pods-IconButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 750793B1F5AAAE02B85A6D14D28E7F30 /* Pods-IconButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF4CFDA3A688869F451F0ACDECEBE854 /* IconButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22F54C4B535D5599F7D2C20E6B907212 /* IconButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,10 +48,11 @@
 		22F54C4B535D5599F7D2C20E6B907212 /* IconButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IconButton-umbrella.h"; sourceTree = "<group>"; };
 		24C406D725ACD82C2EDCA53074A93BF6 /* Pods-IconButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		29DF0BCFF6F0DBA57895639B79D04D49 /* Pods-IconButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2A2D256921B67F7900AAD5BF /* IconButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IconButton.xib; path = IconButton/Classes/IconButton.xib; sourceTree = "<group>"; };
+		2A2D256A21B67F7900AAD5BF /* IconButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconButtonView.swift; path = IconButton/Classes/IconButtonView.swift; sourceTree = "<group>"; };
 		2DDA9FC6715D02ECC8BBF6E6AD827CE7 /* Pods-IconButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IconButton_Example-umbrella.h"; sourceTree = "<group>"; };
 		3DC900A733B73565154025E7EED70113 /* IconButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IconButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FEED857996179EFD8E6880FC9303B9A /* IconButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IconButton.modulemap; sourceTree = "<group>"; };
-		544A12C90BB8689F311FA2EFBFD2BB1F /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = IconButton/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		5C82B243AA9A0A32FF7D0AEE97C06597 /* Pods-IconButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IconButton_Tests-resources.sh"; sourceTree = "<group>"; };
 		5EAEF0BC7B534D72A423A15345D93B46 /* IconButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IconButton-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -203,7 +206,8 @@
 		B97B05357041A6E6881E335359178D91 /* IconButton */ = {
 			isa = PBXGroup;
 			children = (
-				544A12C90BB8689F311FA2EFBFD2BB1F /* ReplaceMe.swift */,
+				2A2D256921B67F7900AAD5BF /* IconButton.xib */,
+				2A2D256A21B67F7900AAD5BF /* IconButtonView.swift */,
 				233D5A0D1E4F88ED7FB767B748B99201 /* Pod */,
 				B6E236ABDA271C3C7400021B346A26F4 /* Support Files */,
 			);
@@ -322,6 +326,12 @@
 					5C87A251C8001BA74BB92264D1CC7243 = {
 						LastSwiftMigration = 1010;
 					};
+					6E78E7106A61CBE27A35701A89DEA64F = {
+						LastSwiftMigration = 1010;
+					};
+					D011365B11506966AC940E56B0BDB10F = {
+						LastSwiftMigration = 1010;
+					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -349,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3CFDCF4A01E1A1C971770EFA334697A /* Pods-IconButton_Example-dummy.m in Sources */,
+				2A2D256C21B67F7900AAD5BF /* IconButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0776CB54B1F129F344FD26D18C90C2C0 /* IconButton-dummy.m in Sources */,
-				B1CBD214808A78A33FC778B15B360D1B /* ReplaceMe.swift in Sources */,
+				2A2D256B21B67F7900AAD5BF /* IconButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A45D79D0431B0B8B38C1DAFF32436347 /* Pods-IconButton_Tests-dummy.m in Sources */,
+				2A2D256D21B67F7900AAD5BF /* IconButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +436,7 @@
 			baseConfigurationReference = 29DF0BCFF6F0DBA57895639B79D04D49 /* Pods-IconButton_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -446,6 +459,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -554,6 +568,7 @@
 			baseConfigurationReference = A5336F6108843793E7CDEE702C7F2D1F /* Pods-IconButton_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -577,6 +592,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -589,6 +605,7 @@
 			baseConfigurationReference = DEE2D81328773041918B655183D098ED /* Pods-IconButton_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -611,6 +628,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -622,6 +641,7 @@
 			baseConfigurationReference = 21B29E6EEA585F589C74805984011349 /* Pods-IconButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -646,6 +666,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
