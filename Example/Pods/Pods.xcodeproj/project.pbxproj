@@ -41,7 +41,7 @@
 		034BF167F97E3FCD001B133C42308F5B /* Pods-IconButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IconButton_Tests.modulemap"; sourceTree = "<group>"; };
 		104436DD59F2E82B746BA3FFAF028684 /* IconButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IconButton-Info.plist"; sourceTree = "<group>"; };
 		123DA4611FDD98821D16BA31B63F22C2 /* Pods-IconButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IconButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1A120131234EA41E00D7F9C7 /* UIImage+XT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+XT.swift"; sourceTree = "<group>"; };
+		1A120131234EA41E00D7F9C7 /* UIImage+XT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+XT.swift"; path = "IconButton/Classes/UIImage+XT.swift"; sourceTree = "<group>"; };
 		1B3CCEB5AFB8151EDE47FBBCC3629EA0 /* Pods-IconButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IconButton_Example-dummy.m"; sourceTree = "<group>"; };
 		1E57320FCA1894695EE251CB7C600FE4 /* Pods-IconButton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IconButton_Tests-Info.plist"; sourceTree = "<group>"; };
 		1FEC81D3818BAB716B66449F1B3E670C /* Pods-IconButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IconButton_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -105,9 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				6B6E497F5CF78CC2D11E6F303CBEE064 /* IconButtonView.swift */,
+				1A120131234EA41E00D7F9C7 /* UIImage+XT.swift */,
 				C6EEAA92A000F88ABFA4A488F3B4DBE4 /* Pod */,
 				750ED076511E7EEB650988BE6ED8192A /* Support Files */,
-				1A120131234EA41E00D7F9C7 /* UIImage+XT.swift */,
 			);
 			name = IconButton;
 			path = ../..;
