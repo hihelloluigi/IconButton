@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     // Mark - Outlets
     @IBOutlet weak var iconButton: IconButton!
     
-    // Mark - Override
+    // Mark - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,4 +24,3 @@ class ViewController: UIViewController {
         print("Clicked")
     }
 }
-
