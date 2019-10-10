@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
   s.swift_version = '5'
-  s.source_files = 'IconButton/Classes/**/*'
+  s.source_files = 'IconButton/**/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'IconButton' => ['IconButton/Assets/*.png']
