@@ -1,7 +1,7 @@
 {
   "name": "IconButton",
-  "version": "0.1.0",
-  "summary": "A short description of IconButton.",
+  "version": "0.2.0",
+  "summary": "A custom iOS button with icon",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/mo3bius/IconButton",
   "license": {
@@ -13,11 +13,12 @@
   },
   "source": {
     "git": "https://github.com/mo3bius/IconButton.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "swift_version": "4.2",
-  "source_files": "IconButton/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "IconButton/Classes/**/*",
+  "swift_version": "5.0"
 }

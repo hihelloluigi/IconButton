@@ -1,5 +1,5 @@
 PODS:
-  - IconButton (0.1.0)
+  - IconButton (0.2.0)
 
 DEPENDENCIES:
   - IconButton (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IconButton: 87797e87c0372ab6077c85ca1b21b47485ee65ce
+  IconButton: 08d020009f37b005839be3f828439e813b82cd0e
 
 PODFILE CHECKSUM: adaee50e91f897f3b0bd02053f67bd2ba2c65c2a
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.8.3

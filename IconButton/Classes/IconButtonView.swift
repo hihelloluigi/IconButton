@@ -11,39 +11,39 @@ import UIKit
 @IBDesignable
 public class IconButton: UIButton {
     
-    // Mark - Outlets
-    @IBOutlet var contentView: UIView!
-    @IBOutlet var titleLbl: UILabel!
-    @IBOutlet var iconImageView: UIImageView!
-    
-    // Mark - Property
+    // MARK: - Property
     public var clickAlphaComponent: CGFloat = 0.6
-    
-    @IBInspectable
-    public var title: String? {
-        didSet {
-            self.titleLbl.text = title
-        }
-    }
-    
-    @IBInspectable
-    public var titleColor: UIColor? {
-        didSet {
-            self.titleLbl.textColor = titleColor
-        }
-    }
-    
+    private var logoImageView: UIImageView?
+    private var imageTintColorProperty: UIColor?
+    private var imageSizeProperty: CGSize?
+
     @IBInspectable
     public var image: UIImage? {
         didSet {
-            self.iconImageView.image = image
+            guard let newImage = image else {
+                logoImageView?.removeFromSuperview()
+
+                return
+            }
+            
+            logoImageView = createImageView(image: newImage)
+            setImageProperties(size: imageSizeProperty, color: imageTintColorProperty)
+        }
+    }
+    
+    @IBInspectable
+    public var imageSize: CGSize = CGSize(width: 30, height: 30) {
+        didSet {
+            imageSizeProperty = imageSize
+            setImageProperties(size: imageSizeProperty, color: imageTintColorProperty)
         }
     }
 
     @IBInspectable
     public var imageTintColor: UIColor? {
         didSet {
-            self.iconImageView.tintColor = imageTintColor
+            imageTintColorProperty = imageTintColor
+            setImageProperties(size: imageSizeProperty, color: imageTintColorProperty)
         }
     }
 
@@ -51,7 +51,7 @@ public class IconButton: UIButton {
     public var isCircle: Bool = false {
         didSet {
             self.clipsToBounds = isCircle
-            self.layer.cornerRadius = isCircle ? (0.5 * self.bounds.size.width) : 0
+            self.layer.cornerRadius = isCircle ? (0.5 * self.frame.size.width) : 0
         }
     }
     
@@ -104,21 +104,22 @@ public class IconButton: UIButton {
         }
     }
     
-    // Mark - Override
+    // MARK: - Life Cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
-        commonInit()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        commonInit()
     }
+    
+    // MARK: - Touches
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         guard let color = self.backgroundColor else {
             return
         }
+        
         self.backgroundColor = color.withAlphaComponent(clickAlphaComponent)
     }
     
@@ -127,19 +128,47 @@ public class IconButton: UIButton {
         guard let color = self.backgroundColor else {
             return
         }
+        
         self.backgroundColor = color.withAlphaComponent(1)
     }
     
-    // Mark - Setup
-    private func commonInit() {
-        let bundle = Bundle(for: IconButton.self)
-        bundle.loadNibNamed("IconButton", owner: self, options: nil)
-//        Bundle.main.loadNibNamed("IconButton", owner: self, options: nil)
-
-        contentView.frame = self.bounds
-        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+    // MARK: - Methods
+    private func createImageView(image: UIImage) -> UIImageView {
+        // Create Image View Programmatically
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         
-        addSubview(contentView)
-        sendSubviewToBack(contentView)
+        // Add Image View to button View
+        self.addSubview(imageView)
+        
+        // Set Image View Constraints
+        setConstraint(imageView: imageView, size: nil)
+        imageView.image = image
+        
+        // Set Title Label Constraints
+        titleLabel!.leftAnchor.constraint(greaterThanOrEqualTo: imageView.rightAnchor, constant: 16).isActive = true
+
+        return imageView
+    }
+    
+    private func setConstraint(imageView: UIImageView, size: CGSize?) {
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.removeConstraints(imageView.constraints)
+        
+        imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: size?.width ?? imageView.frame.width).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: size?.height ?? imageView.frame.height).isActive = true
+    }
+    
+    private func setImageProperties(size: CGSize?, color: UIColor?) {
+        guard let imageView = logoImageView else {
+            return
+        }
+        
+        // Size
+        setConstraint(imageView: imageView, size: size)
+        
+        // Color
+        imageView.image = imageView.image?.tinted(with: color ?? tintColor)
     }
 }
